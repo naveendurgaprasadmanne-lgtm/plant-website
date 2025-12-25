@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GreenLeaf Plants</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5fff5;
+            color: #2f4f2f;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #1b5e20;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #1b5e20;
+            margin-bottom: 20px;
+        }
+
+        .plants {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .plant-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .plant-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .contact-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌿 GreenLeaf Plants</h1>
+    <p>Bringing Nature Closer to You</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#plants">Plants</a>
+    <a href="#care">Plant Care Guide</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome</h2>
+    <p>
+        Welcome to <strong>GreenLeaf Plants</strong>.  
+        We love plants and help you grow healthy, happy greenery at home.
+        Discover indoor, outdoor, and medicinal plants with easy care tips.
+    </p>
+</section>
+
+<section id="plants">
+    <h2>Our Plants</h2>
+
+    <div class="plants">
+        <div class="plant-card">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Indoor Plant">
+            <h3>Indoor Plants</h3>
+            <p>Low maintenance plants perfect for homes and offices.</p>
+        </div>
+
+        <div class="plant-card">
+            <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551" alt="Outdoor Plant">
+            <h3>Outdoor Plants</h3>
+            <p>Beautiful plants to brighten gardens and balconies.</p>
+        </div>
+
+        <div class="plant-card">
+            <img src="https://images.unsplash.com/photo-1598514982846-ec9c7a2cb65f" alt="Medicinal Plant">
+            <h3>Medicinal Plants</h3>
+            <p>Plants with natural healing properties.</p>
+        </div>
+    </div>
+</section>
+
+<section id="care">
+    <h2>Plant Care Guide</h2>
+
+    <ul>
+        <li>💧 Water plants only when the soil feels dry.</li>
+        <li>☀️ Ensure proper sunlight based on plant type.</li>
+        <li>🌱 Use organic fertilizer once a month.</li>
+        <li>🪴 Repot plants when roots outgrow the pot.</li>
+        <li>🍃 Remove dry or yellow leaves regularly.</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+        <p><strong>📞 Phone:</strong> +91 XXXXXXXXXX</p>
+        <p><strong>📧 Email:</strong> greenleaf@email.com</p>
+        <p><strong>📍 Location:</strong> Your City, India</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 GreenLeaf Plants | Grow Green 🌱</p>
+</footer>
+
+</body>
+</html>
