@@ -5,10 +5,13 @@
     <title>GreenLeaf Plants</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Telugu Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: Arial, "Noto Sans Telugu", sans-serif;
             background-color: #f5fff5;
             color: #2f4f2f;
         }
@@ -28,9 +31,17 @@
 
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
             font-weight: bold;
+        }
+
+        nav button {
+            margin-left: 8px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
         }
 
         section {
@@ -41,7 +52,6 @@
 
         h2 {
             color: #1b5e20;
-            margin-bottom: 20px;
         }
 
         .plants {
@@ -65,18 +75,18 @@
             border-radius: 6px;
         }
 
-        footer {
-            background-color: #1b5e20;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-
         .contact-box {
             background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 15px;
         }
     </style>
 </head>
@@ -85,74 +95,110 @@
 
 <header>
     <h1>🌿 GreenLeaf Plants</h1>
-    <p>Bringing Nature Closer to You</p>
+    <p data-lang="en">Bringing Nature Closer to You</p>
+    <p data-lang="te" style="display:none;">ప్రకృతిని మీకు దగ్గర చేస్తున్నాము</p>
 </header>
 
 <nav>
     <a href="#home">Home</a>
     <a href="#plants">Plants</a>
-    <a href="#care">Plant Care Guide</a>
+    <a href="#care">Care</a>
     <a href="#contact">Contact</a>
+
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('te')">తెలుగు</button>
 </nav>
 
+<!-- HOME -->
 <section id="home">
-    <h2>Welcome</h2>
-    <p>
+    <h2 data-lang="en">Welcome</h2>
+    <h2 data-lang="te" style="display:none;">స్వాగతం</h2>
+
+    <p data-lang="en">
         Welcome to <strong>GreenLeaf Plants</strong>.  
-        We love plants and help you grow healthy, happy greenery at home.
-        Discover indoor, outdoor, and medicinal plants with easy care tips.
+        We provide healthy indoor, outdoor, and medicinal plants with easy care tips.
+    </p>
+
+    <p data-lang="te" style="display:none;">
+        <strong>గ్రీన్‌లీఫ్ ప్లాంట్స్</strong> కు స్వాగతం.  
+        సులభమైన సంరక్షణ సూచనలతో ఆరోగ్యమైన మొక్కలను మేము అందిస్తున్నాము.
     </p>
 </section>
 
+<!-- PLANTS -->
 <section id="plants">
-    <h2>Our Plants</h2>
+    <h2 data-lang="en">Our Plants</h2>
+    <h2 data-lang="te" style="display:none;">మా మొక్కలు</h2>
 
     <div class="plants">
         <div class="plant-card">
-            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Indoor Plant">
-            <h3>Indoor Plants</h3>
-            <p>Low maintenance plants perfect for homes and offices.</p>
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+            <h3 data-lang="en">Indoor Plants</h3>
+            <h3 data-lang="te" style="display:none;">ఇండోర్ మొక్కలు</h3>
+            <p data-lang="en">Perfect for homes and offices.</p>
+            <p data-lang="te" style="display:none;">ఇంటి లోపల పెంచడానికి అనువైనవి.</p>
         </div>
 
         <div class="plant-card">
-            <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551" alt="Outdoor Plant">
-            <h3>Outdoor Plants</h3>
-            <p>Beautiful plants to brighten gardens and balconies.</p>
+            <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551">
+            <h3 data-lang="en">Outdoor Plants</h3>
+            <h3 data-lang="te" style="display:none;">ఔట్‌డోర్ మొక్కలు</h3>
+            <p data-lang="en">Great for gardens and balconies.</p>
+            <p data-lang="te" style="display:none;">తోటలు మరియు బాల్కనీలకు అనువైనవి.</p>
         </div>
 
         <div class="plant-card">
-            <img src="https://images.unsplash.com/photo-1598514982846-ec9c7a2cb65f" alt="Medicinal Plant">
-            <h3>Medicinal Plants</h3>
-            <p>Plants with natural healing properties.</p>
+            <img src="https://images.unsplash.com/photo-1598514982846-ec9c7a2cb65f">
+            <h3 data-lang="en">Medicinal Plants</h3>
+            <h3 data-lang="te" style="display:none;">ఔషధ మొక్కలు</h3>
+            <p data-lang="en">Plants with healing properties.</p>
+            <p data-lang="te" style="display:none;">ఆరోగ్యానికి మేలు చేసే మొక్కలు.</p>
         </div>
     </div>
 </section>
 
+<!-- CARE -->
 <section id="care">
-    <h2>Plant Care Guide</h2>
+    <h2 data-lang="en">Plant Care Guide</h2>
+    <h2 data-lang="te" style="display:none;">మొక్కల సంరక్షణ మార్గదర్శకం</h2>
 
     <ul>
-        <li>💧 Water plants only when the soil feels dry.</li>
-        <li>☀️ Ensure proper sunlight based on plant type.</li>
-        <li>🌱 Use organic fertilizer once a month.</li>
-        <li>🪴 Repot plants when roots outgrow the pot.</li>
-        <li>🍃 Remove dry or yellow leaves regularly.</li>
+        <li data-lang="en">💧 Water only when soil is dry</li>
+        <li data-lang="te" style="display:none;">💧 మట్టి పొడిగా ఉన్నప్పుడు మాత్రమే నీరు పెట్టండి</li>
+
+        <li data-lang="en">☀️ Provide proper sunlight</li>
+        <li data-lang="te" style="display:none;">☀️ తగినంత సూర్యకాంతి ఇవ్వండి</li>
+
+        <li data-lang="en">🌱 Use organic fertilizer monthly</li>
+        <li data-lang="te" style="display:none;">🌱 నెలకు ఒకసారి సేంద్రీయ ఎరువు వాడండి</li>
     </ul>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
-    <h2>Contact Us</h2>
+    <h2 data-lang="en">Contact Us</h2>
+    <h2 data-lang="te" style="display:none;">మమ్మల్ని సంప్రదించండి</h2>
 
     <div class="contact-box">
-        <p><strong>📞 Phone:</strong> +91 XXXXXXXXXX</p>
-        <p><strong>📧 Email:</strong> greenleaf@email.com</p>
-        <p><strong>📍 Location:</strong> Your City, India</p>
+        <p><strong>📞</strong> +91 XXXXXXXXXX</p>
+        <p><strong>📧</strong> greenleaf@email.com</p>
+        <p data-lang="en"><strong>📍</strong> Your City, India</p>
+        <p data-lang="te" style="display:none;"><strong>📍</strong> మీ నగరం, భారత్</p>
     </div>
 </section>
 
 <footer>
-    <p>© 2025 GreenLeaf Plants | Grow Green 🌱</p>
+    <p>© 2025 GreenLeaf Plants 🌱</p>
 </footer>
+
+<!-- LANGUAGE SCRIPT -->
+<script>
+function setLanguage(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+    });
+}
+</script>
 
 </body>
 </html>
